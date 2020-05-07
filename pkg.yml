@@ -19,7 +19,7 @@
 
 ### Entries containing `***` need to be replaced with actual values.
 
-pkg.name: "hw/bsp/cjmcu"
+pkg.name: cjmcu-8223-bsp
 pkg.type: bsp
 pkg.description: "Description of your package"
 pkg.author: "You <you@you.org>"
