@@ -22,14 +22,14 @@
 bsp.arch: cortex_m0
 bsp.compiler: '@apache-mynewt-core/compiler/arm-none-eabi-m0'
 bsp.linkerscript:
-    - 'hw/bsp/cjmcu/cjmcu.ld'
+    - 'hw/bsp/cjmcu-8223/cjmcu.ld'
     - '@apache-mynewt-core/hw/mcu/nordic/nrf51xxx/nrf51.ld'
 bsp.linkerscript.BOOT_LOADER.OVERWRITE:
-    - 'hw/bsp/cjmcu/boot-cjmcu.ld'
+    - 'hw/bsp/cjmcu-8223/boot-cjmcu.ld'
     - '@apache-mynewt-core/hw/mcu/nordic/nrf51xxx/nrf51.ld'
-bsp.part2linkerscript: "split-cjmcu.ld"
-bsp.downloadscript: "cjmcu_download.sh"
-bsp.debugscript: "cjmcu_debug.sh"
+bsp.part2linkerscript: "hw/bsp/cjmcu-8223/split-cjmcu.ld"
+bsp.downloadscript: "hw/bsp/cjmcu-8223/cjmcu_download.sh"
+bsp.debugscript: "hw/bsp/cjmcu-8223/cjmcu_debug.sh"
 
 bsp.flash_map:
     areas:
